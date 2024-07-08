@@ -1,0 +1,37 @@
+.todo-item {
+    transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+    background-color: #f8f9fa;
+}
+
+.icons {
+    visibility: hidden;
+}
+
+.todo-item:hover .icons {
+    visibility: visible;
+}
+
+.tasks-info {
+    background-color: #f8f9fa; /* light gray background */
+    font-size: 1.1rem; /* slightly larger font size */
+    font-weight: bold; /* bold text */
+    padding: 10px; /* add padding for better spacing */
+    color: #6c757d; /* subtle text color */
+}
+
+.check-icon {
+    color: #28a745; 
+    margin: 4px;
+    cursor: pointer;
+}
+
+.trash-icon {
+    color: #6c757d;
+    margin: 4px;
+    cursor: pointer;
+}
+
+

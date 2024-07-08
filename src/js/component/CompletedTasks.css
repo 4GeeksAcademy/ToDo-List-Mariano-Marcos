@@ -1,0 +1,28 @@
+.completed-todo-item {
+    transition: background-color 0.3s ease;
+}
+
+.completed-todo-item:hover {
+    background-color: #f8f9fa;
+}
+
+.undo-container {
+    visibility: hidden; /* Initially hide undo icon and legend */
+    display: flex;
+    align-items: center;
+}
+
+.completed-todo-item:hover .undo-container {
+    visibility: visible; /* Show undo icon and legend on hover */
+}
+
+.undo-icon {
+    color: #6c757d; 
+    margin: 4px;
+    cursor: pointer;
+}
+
+.undo-legend {
+    font-size: 0.9rem;
+    color: #6c757d; 
+}
