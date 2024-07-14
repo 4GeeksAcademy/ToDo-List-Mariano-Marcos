@@ -7,20 +7,20 @@ const TodoList = ({ todos, removeTodo, completeTodo }) => {
         <div>
             {todos.length === 0 && <h4 className="mt-4">No tasks, add a task</h4>}
             <ul className="list-group">
-                {todos.map((todo, index) => (
+                {todos.map((todo) => (
                     <li
-                        key={index}
+                        key={todo.id}
                         className="list-group-item d-flex justify-content-between align-items-center todo-item"
                     >
-                        {todo.text}
+                        {todo.label}
                         <div className="icons">
                             <FaCheck
                                 className="icon check-icon"
-                                onClick={() => completeTodo(index)}
+                                onClick={() => completeTodo(todo.id)}
                             />
                             <FaTrashAlt
                                 className="icon trash-icon"
-                                onClick={() => removeTodo(index)}
+                                onClick={() => removeTodo(todo.id)}
                             />
                         </div>
                     </li>
